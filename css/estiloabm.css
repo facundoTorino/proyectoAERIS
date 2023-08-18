@@ -1,0 +1,239 @@
+	/* FUENTES DE LA PAGINA */
+	/* Fuente para textos informativos, subtitulos, etc */
+	@font-face	{	font-family: "Carbona";
+					src: url("../fonts/carbona.ttf");
+	}
+
+*	{	margin: 0;
+		padding: 0;
+	}
+
+	/* VARIOS */
+
+.header-pagina	{	width: 95%;
+					font-family: "Carbona", "Helvetica", "Times New Roman";
+					text-align: center;
+				}
+
+	/* INDEX.PHP */
+
+body{	background: white;
+		color: black;
+		font-family: "Carbona", "Helvetica", "Times New Roman";
+		letter-spacing: 1px;
+	}
+
+.bienvenida	{	font-family: "Carbona", "Helvetica", "Times New Roman";
+				color: #1B3043;
+				font-size: 40px;
+				text-decoration: none;
+			}
+
+.titulo-pagina	{	margin-left: 3%;
+					font-family: "Carbona", "Helvetica", "Times New Roman";
+					color: #1B3043;
+					font-size: 30px;
+				}
+
+.table-anhadir-juego{	width: 95%;
+						font-family: "Carbona", "Helvetica", "Times New Roman";
+						text-align: right;
+					}
+
+.boton-anhadir	{	border-radius: 3px;
+					display: inline-block;
+					padding: 20px 15px;
+					margin-left: 3%;
+					text-decoration: none;
+					font-family: "Carbona", "Helvetica", "Times New Roman";
+					color: white;
+					background-color: #FF6835;
+					font-size: 20px;
+					text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+					box-shadow: 0 1px 0 rgba(0,0,0,0.3);
+				}
+
+.boton-anhadir:hover{	background-color: #E55D2F;
+						cursor: pointer;
+					}
+
+.div-input-busqueda	{	display: inline-block;
+						position: relative;
+						width: 250px;
+					}
+
+.input-busqueda	{	box-sizing: border-box;
+					border-width: 0px;
+					border-bottom: 1px solid black;
+					color: black;
+					padding: 10px;
+					width: 100%;
+					font-size: 14px;
+					background-color: transparent;
+					outline: none;
+				}
+
+.input-busqueda:focus	{	border-bottom: 1px solid #FF6835;
+						}
+
+.label-busqueda	{	color: black;
+					font-size: 14px;
+					font-weight: bold;
+					position: absolute;
+					top: 12px;
+					left: 10px;
+					width: 100%;
+					transition: all .15s linear;
+					z-index: -1;
+				}
+
+.input-busqueda:focus ~ .label-busqueda,
+.input-busqueda:not(:placeholder-shown) ~ .label-busqueda	{	top: -15px;
+																left: 0;
+															}
+
+.boton-listar	{	border-radius: 3px;
+					display: inline-block;
+					padding: 20px 15px;
+					margin-left: 3%;
+					text-decoration: none;
+					font-family: "Carbona", "Helvetica", "Times New Roman";
+					color: white;
+					background-color: #FF6835;
+					font-size: 20px;
+					text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+					box-shadow: 0 1px 0 rgba(0,0,0,0.3);
+				}
+
+.boton-listar:hover	{	background-color: #E55D2F;
+						cursor: pointer;
+					}
+
+	/* TABLA LISTADO INDEX.PHP */
+
+.listado{	width: 95%;
+			font-family: "Carbona", "Helvetica", "Times New Roman";
+			text-align: center;
+			border-collapse: collapse;
+			border: 2px solid #1B3043;
+		}
+
+.th-naranja	{	background-color: #FF6835;
+				color: white;
+				text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+				font-family: "Carbona", "Helvetica", "Times New Roman";
+				border-collapse: collapse;
+				border: 2px solid #1B3043;
+				padding: 5px;
+			}
+
+.td-blanco	{	background-color: white;
+				color: black;
+				text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+				font-family: "Carbona", "Helvetica", "Times New Roman";
+				border-collapse: collapse;
+				border: 2px solid #1B3043;
+				padding: 5px;
+			}
+
+.botones-accion	{	text-decoration: none;
+					color: #FF6835;
+				}
+
+.botones-accion:hover	{	text-decoration: underline;
+							color: #FF6835;
+						}
+
+	/* CREAR.PHP */
+
+.formulario	{	margin-left: 3%;
+				line-height: 3.5;
+				width: 95%;
+				font-family: "Carbona", "Helvetica", "Times New Roman";
+				text-align: center;
+				border-collapse: collapse;
+				padding: 5px;
+			}
+
+.th-label	{	color: #1B3043;
+				text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+				font-family: "Carbona", "Helvetica", "Times New Roman";
+				border-collapse: collapse;
+				padding: 5px;
+				text-align: left;
+				width: 350px;
+			}
+
+.td-input	{	color: black;
+				text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+				font-family: "Carbona", "Helvetica", "Times New Roman";
+				border-collapse: collapse;
+				padding: 5px;
+				text-align: left;
+				width: 400px;
+			}
+
+.div-input-crear{	display: inline-block;
+					position: relative;
+					width: 75%;
+				}
+
+.input-crear	{	box-sizing: border-box;
+					border-width: 0px;
+					border-bottom: 1px solid black;
+					color: black;
+					padding: 10px;
+					width: 100%;
+					font-size: 14px;
+					background-color: transparent;
+					outline: none;
+				}
+
+.input-crear:focus	{	border-bottom: 1px solid #FF6835;
+					}
+
+.label-crear	{	color: black;
+					font-size: 14px;
+					font-weight: bold;
+					position: absolute;
+					top: 12px;
+					left: 10px;
+					width: 100%;
+					transition: all .15s linear;
+					z-index: -1;
+				}
+
+.input-crear:focus ~ .label-crear,
+.input-crear:not(:placeholder-shown) ~ .label-crear	{	top: -15px;
+														left: 0;
+													}
+
+.botones-crear	{	text-align: left;
+				}
+
+	/* ALERTAS */
+
+.alert-container{	align-items: center;
+					height: 100px;
+					width: 100%;
+				}
+
+.warning{	border-radius: 5px;
+			padding: 8px;
+			text-align: center;
+			flex-direction: row;
+			max-width: 30%;
+			margin: 10px;
+		}
+
+.advice	{	color: rgb(131, 72, 72);
+			background-color: rgb(255, 143, 143);
+			border: solid 2px rgb(216, 119, 119);
+			font-weight: bold;
+		}
+
+.ok	{	color: rgb(78, 131, 72);
+		background-color: rgb(165, 255, 143);
+		border: solid 2px rgb(124, 216, 119);
+		font-weight: bold;
+	}
