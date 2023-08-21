@@ -146,8 +146,8 @@ if (isset($juegos) && $juegos) {
 			<label for="genero" class="label-crear">G&eacute;nero</label>
 		</div><br><br><br><br>
 		<div class="div-input-crear" style="margin-left: 3%;">
-			<textarea name="desc" id="desc" placeholder="" class="input-crear" rows="4" cols="50" required></textarea>
-			<label for="desc" class="label-crear" value="<?= escapar($juegos['DESC_JUEGO']) ?>">Descripci&oacute;n</label>
+			<textarea name="desc" id="desc" placeholder="" class="input-crear" rows="4" cols="50" required><?= escapar($juegos['DESC_JUEGO']) ?></textarea>
+			<label for="desc" class="label-crear">Descripci&oacute;n</label>
 		</div><br><br><br><br>
 		<div class="div-input-crear" style="margin-left: 3%;">
 			<input type="text" name="so_m" id="so_m" placeholder="" class="input-crear" value="<?= escapar($juegos['SO_M']) ?>" required>
